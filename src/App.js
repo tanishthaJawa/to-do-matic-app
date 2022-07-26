@@ -3,7 +3,7 @@ import Form from "./components/Form";
 import FilterButton from "./components/FilterButton";
 import { useRef, useState, useEffect } from "react";
 import { nanoid } from "nanoid";
-import  usePrevious  from "./components/UsePrevious";
+import usePrevious from "./components/UsePrevious";
 
 const FILTER_MAP = {
   All: () => true,
@@ -38,6 +38,7 @@ function App(props) {
       />
     )
     );
+
   const tasksNoun = taskList.length !== 1 ? 'tasks' : 'task';
   const headingText = `${taskList.length} ${tasksNoun} remaining`;
 
